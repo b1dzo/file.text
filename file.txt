@@ -1,0 +1,26 @@
+     --Here computer selects random number (-100) - (+100)
+xnum = 0
+math.randomseed(os.time())
+number = math.random(-100, 100)
+
+     --There computer guesses which number is "N" - (0 < n) and "Z" - (0 > n)
+
+            if(xnum > number) then
+                    for index = 100, -100, -1 do
+                          print(index)
+
+                    end
+
+                        print("Z!")
+
+            elseif(xnum < number) then
+                    for index = -100, 100, 1 do
+                          print(index)
+
+                    end
+                        print("N!")
+            end
+
+     --And then, computer prints random number.
+
+print("chosen number is " ..number)
